@@ -7,6 +7,7 @@ class BrandListView(ListView):
     model = models.Brand
     template_name = 'brand_list.html'
     context_object_name = 'brands'  # object will be send to template
+    paginate_by = 10
 
     #  overwrite the get to filter by name
     def get_queryset(self):
