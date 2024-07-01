@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+
+{% block content %}
+    <div class="container mt-4">
+        <h3 class="display-6">Outflow Details</h3>
+
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">{{ outflow.product }}</h3>
+                <p class="card-text">Quantity: <strong>{{ outflow.quantity }}</strong> </p>
+                <p class="card-text">{{ outflow.description }}</p>
+            </div>
+        </div>
+        <a href="{% url 'outflow_list' %}" class="btn btn-danger mt-3">Return to Outflows</a>
+
+    </div>
+
+{% endblock %}
