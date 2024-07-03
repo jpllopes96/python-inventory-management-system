@@ -1,3 +1,4 @@
 [flake8]
 exclude = venv
 ignore = E501
+ignore = F0401
